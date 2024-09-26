@@ -1,0 +1,45 @@
+{
+  "name": "3d",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://SUSHANT0002.github.io/iPhone-15-pro",
+  "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.1",
+    "@react-three/drei": "^9.112.0",
+    "@react-three/fiber": "^8.17.7",
+    "gsap": "^3.12.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1",
+    "three": "^0.168.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "gh-pages": "^6.1.1",
+    "globals": "^15.9.0",
+    "postcss": "^8.4.44",
+    "tailwindcss": "^3.4.10",
+    "vite": "^5.4.8",
+    "vitest": "^2.1.1"
+  }
+}

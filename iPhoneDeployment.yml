@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iphone
+  labels:
+    app: iphone
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: iphone
+  template:
+    metadata:
+      labels:
+        app: iphone
+    spec:
+      containers:
+        - name: iphone
+          image: sushant0002/iphone:latest
+          imagePullPolicy: IfNotPresent # important for local images
+          ports:
+            - containerPort: 80
